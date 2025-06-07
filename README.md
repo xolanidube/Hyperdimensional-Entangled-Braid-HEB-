@@ -27,10 +27,38 @@ This code is a conceptual prototype, not a fully realized data structure.
 
 ## Potential Real-World Applications
 
-- Ultra-fast lookups in massive databases.
-- Rapid indexing in large-scale directory structures.
-- High-frequency financial data retrieval.
-- Accelerated network routing table lookups.
+Below we outline several domains where the HEB's theoretical speedups could be
+useful. These are not proven benchmarks, but rather sketches of how one might
+apply the data structure in practice.
+
+### Ultra-fast lookups in massive databases
+
+Large data warehouses often need to sift through petabytes of information to
+respond to analytical queries. A HEB-based index could in theory narrow down the
+search space with fewer hash collisions than traditional structures, allowing for
+faster retrieval of records even when the dataset is distributed across many
+nodes.
+
+### Rapid indexing in large-scale directory structures
+
+File systems with billions of files can suffer from slow traversal times.
+Embedding file identifiers into a HEB might yield quicker directory operations
+and more efficient path resolution, enabling nearly instantaneous access to files
+regardless of directory depth.
+
+### High-frequency financial data retrieval
+
+Trading platforms rely on millisecond-level access to recent market events.
+Because the HEB prioritizes quick search steps, it could theoretically maintain a
+rolling index of trade data or order books so that algorithms can react to
+changing market conditions with minimal latency.
+
+### Accelerated network routing table lookups
+
+Routers and network switches store large routing tables. Incorporating a HEB
+structure could reduce lookup times when determining packet forwarding routes.
+This might translate into lower network latency and more responsive routing
+decisions during periods of heavy traffic.
 
 ## Validation
 

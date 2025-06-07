@@ -65,5 +65,7 @@ decisions during periods of heavy traffic.
 We perform academic-level testing: insert a few keys, verify retrieval correctness. Complexity benefits are not empirically tested.
 
 ## Usage
-
-Run the provided code snippet to see basic insertions and searches. 
+The repository now includes a small Python implementation of the HEB in
+`heb.py`. To see the data structure in action, run `python use_cases.py`.
+The script demonstrates simple mock scenarios for each of the potential
+applications listed above and prints the results of several lookups.
